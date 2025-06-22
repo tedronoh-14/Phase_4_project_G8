@@ -1,4 +1,4 @@
-# Twitter Sentiment Analysis Project
+# Twitter Sentiment Analysis Project 
 
 This project focuses on analyzing public sentiment towards brands and products on Twitter using Natural Language Processing (NLP) techniques. The primary goal is to classify tweets into positive, negative, or neutral sentiment categories, provide comparative insights between major brands like Apple and Google, and offer actionable recommendations for customer satisfaction.
 
@@ -24,6 +24,7 @@ In today's competitive landscape, understanding customer perceptions is paramoun
 
 ## 2. Dataset
 The dataset for this project is sourced from data.world, containing tweet texts and their associated sentiment labels towards specific brands or products.
+Dataset source: https://data.world/crowdflower/apple-twitter-sentiment
 
 ### Initial Data Overview:
 The dataset initially contained three columns:
@@ -86,9 +87,15 @@ The analysis focused on discriminating between positive and negative sentiments.
 * **Continuous Sentiment Monitoring**: Implement social media strategies for ongoing tracking of public sentiment to support informed business decisions.
 * **Product/Service Enhancement**: Use analyzed sentiment data to directly improve product features and service quality.
 * **Competitor Analysis**: Extend the analysis to include industry competitors for competitive intelligence and identifying unique positioning opportunities.
+* **Improve Model Interpretability**: Apply SHAP or LIME for model explanation in future iterations.
+
 
 ## 6. Conclusion
 The project successfully demonstrated the application of NLP for Twitter sentiment classification. The models developed provide a foundation for companies like Apple and Google to track public sentiment. A key limitation identified is the inherent subjectivity and missing data within the crowd-sourced dataset, which significantly impacted the performance of multiclass classifiers, especially concerning the minority classes.
+
+### Future Work
+- Future work could involve using advanced transformers (e.g. BERT) or deep learning for better text representations.
+
 
 ## 7. Technologies Used
 * **Python**
@@ -98,3 +105,6 @@ The project successfully demonstrated the application of NLP for Twitter sentime
 * **NLTK**: Natural Language Toolkit for text preprocessing (tokenization, stopwords, stemming, VADER).
 * **Scikit-learn**: Machine learning models (Logistic Regression, Multinomial Naive Bayes, SVC, KNN, MLPClassifier), feature extraction (TfidfVectorizer, CountVectorizer), model selection (GridSearchCV), and evaluation metrics (classification_report, confusion_matrix, roc_curve, accuracy_score).
 * **Imblearn**: For handling imbalanced datasets (SMOTE, RandomOverSampler, ImbPipeline).
+* **Imbalanced-learn (Imblearn)**: Handling imbalanced classes using SMOTE, RandomOverSampler, and Pipelines.
+* **Jupyter Notebook**: Interactive development environment for writing, documenting, and running code.
+* **Git**: Version control system for tracking changes and collaborating via GitHub.
